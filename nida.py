@@ -9,7 +9,7 @@ app = Flask(__name__)
 model = pickle.load(open('rf_regression_model.pkl', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 
 standard_to = StandardScaler()
